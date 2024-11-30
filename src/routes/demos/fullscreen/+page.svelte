@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import QrcodeStream from '$lib/components/qrcode-stream.svelte';
 
 	let fullscreen = $state(false);
@@ -81,7 +82,7 @@
 <div class:fullscreen bind:this={wrapper} onfullscreenchange={onFullscreenChange}>
 	<QrcodeStream {onError}>
 		<button onclick={() => (fullscreen = !fullscreen)} class="fullscreen-button">
-			<img src={fullscreenIcon} alt="toggle fullscreen" />
+			<img src={base + fullscreenIcon} alt="toggle fullscreen" />
 		</button>
 	</QrcodeStream>
 </div>

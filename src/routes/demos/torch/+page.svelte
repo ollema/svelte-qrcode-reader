@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import { onMount } from 'svelte';
 	import QrcodeStream from '$lib/components/qrcode-stream.svelte';
 
@@ -56,7 +57,7 @@
 			{onCameraOn}
 		>
 			<button onclick={() => (torchActive = !torchActive)} disabled={torchNotSupported}>
-				<img src={icon} alt="toggle torch" />
+				<img src={base + icon} alt="toggle torch" />
 			</button>
 		</QrcodeStream>
 	</div>

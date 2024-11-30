@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import type { Snippet } from 'svelte';
 
 	type Props = {
@@ -14,9 +15,9 @@
 			<li><strong>Svelte Qrcode Reader</strong></li>
 		</ul>
 		<ul>
-			<li><a href="/">Home</a></li>
-			<li><a href="/">Live Demos</a></li>
-			<li><a href="/">API Reference</a></li>
+			<li><a href="{base}/">Home</a></li>
+			<li><a href="{base}/">Live Demos</a></li>
+			<li><a href="{base}/">API Reference</a></li>
 		</ul>
 	</nav>
 </header>

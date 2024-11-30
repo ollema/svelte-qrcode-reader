@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import QrcodeStream from '$lib/components/qrcode-stream.svelte';
 
 	let facingMode = $state<'environment' | 'user'>('environment');
@@ -39,7 +40,7 @@
 <div class="scanner">
 	<QrcodeStream constraints={{ facingMode }} {onError}>
 		<button onclick={switchCamera}>
-			<img src="/camera-switch.svg" alt="switch camera" />
+			<img src="{base}/camera-switch.svg" alt="switch camera" />
 		</button>
 	</QrcodeStream>
 </div>

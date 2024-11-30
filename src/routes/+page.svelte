@@ -1,8 +1,9 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import { goto } from '$app/navigation';
 
 	function gotoDemos() {
-		goto('/demos');
+		goto(`${base}/demos`);
 	}
 
 	function gotoGithub() {

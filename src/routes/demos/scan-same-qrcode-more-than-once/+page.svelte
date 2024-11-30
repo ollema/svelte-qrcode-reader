@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import type { DetectedBarcode } from 'barcode-detector/pure';
 	import QrcodeStream from '$lib/components/qrcode-stream.svelte';
 
@@ -52,7 +53,7 @@
 	<QrcodeStream {onDetect} {onCameraOn} {onCameraOff} {onError} bind:paused>
 		{#if showScanConfirmation}
 			<div class="scan-confirmation">
-				<img src="/checkmark.svg" alt="Checkmark" width="128" />
+				<img src="{base}/checkmark.svg" alt="Checkmark" width="128" />
 			</div>
 		{/if}
 	</QrcodeStream>
