@@ -26,21 +26,28 @@
 
 <p>Push the button below to force destroy and re-create the component.</p>
 
-<div>
-	<button onclick={reload}>Destroy And Re-Create Component</button>
+<button onclick={reload}>Destroy And Re-Create Component</button>
 
-	{#if !destroyed}
+{#if !destroyed}
+	<div class="scanner">
 		<QrcodeStream {onCameraOn}>
 			{#if loading}
 				<div class="loading-indicator">Loading...</div>
 			{/if}
 		</QrcodeStream>
-	{/if}
-</div>
+	</div>
+{/if}
 
 <style>
 	button {
 		margin-bottom: 20px;
+	}
+
+	.scanner {
+		width: 100%;
+		max-width: 600px;
+		aspect-ratio: 4/3;
+		margin-top: 20px;
 	}
 
 	.loading-indicator {

@@ -4,7 +4,7 @@
 
 	let result = $state<string | null>(null);
 	let error = $state<string | null>(null);
-		
+
 	let dragover = $state(false);
 
 	let barcodeFormats = $state<Record<BarcodeFormat, boolean>>({
