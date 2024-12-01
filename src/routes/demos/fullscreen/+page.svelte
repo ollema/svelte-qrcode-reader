@@ -5,7 +5,6 @@
 	let fullscreen = $state(false);
 	let wrapper: HTMLDivElement;
 
-	// Computed property for icon
 	let fullscreenIcon = $derived(fullscreen ? '/fullscreen-exit.svg' : '/fullscreen.svg');
 
 	function onError(error: Error) {
@@ -13,7 +12,7 @@
 	}
 
 	function onFullscreenChange() {
-		// This becomes important when the user doesn't use the button to exit
+		// this becomes important when the user doesn't use the button to exit
 		// fullscreen but hits ESC on desktop, pushes a physical back button on
 		// mobile etc.
 		fullscreen = document.fullscreenElement !== null;

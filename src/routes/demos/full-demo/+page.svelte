@@ -2,7 +2,6 @@
 	import type { DetectedBarcode, BarcodeFormat } from 'barcode-detector/pure';
 	import QrcodeStream from '$lib/components/qrcode-stream.svelte';
 
-	// state
 	let result = $state('');
 	let error = $state('');
 

@@ -2,10 +2,11 @@
 	import type { BarcodeFormat, DetectedBarcode } from 'barcode-detector/pure';
 	import QrcodeDropZone from '$lib/components/qrcode-drop-zone.svelte';
 
-	// State
 	let result = $state<string | null>(null);
 	let error = $state<string | null>(null);
+		
 	let dragover = $state(false);
+
 	let barcodeFormats = $state<Record<BarcodeFormat, boolean>>({
 		aztec: false,
 		code_128: false,
