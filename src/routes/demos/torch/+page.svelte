@@ -20,6 +20,7 @@
 		}
 	});
 
+	// eslint-disable-next-line no-undef
 	function onCameraOn(capabilities: MediaTrackCapabilities) {
 		console.log(capabilities);
 		// @ts-expect-error torch is not in the MediaTrackConstraints type but it should be?

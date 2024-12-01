@@ -12,12 +12,12 @@
 <header class="container">
 	<nav>
 		<ul>
-			<li><strong>Svelte Qrcode Reader</strong></li>
+			<li><strong><a href="{base}/">Svelte Qrcode Reader</a></strong></li>
 		</ul>
 		<ul>
 			<li><a href="{base}/">Home</a></li>
-			<li><a href="{base}/">Live Demos</a></li>
-			<li><a href="{base}/">API Reference</a></li>
+			<li><a href="{base}/demos">Live Demos</a></li>
+			<li><a href="{base}/api">API Reference</a></li>
 		</ul>
 	</nav>
 </header>

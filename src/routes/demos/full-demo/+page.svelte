@@ -62,7 +62,6 @@
 
 	let constraintOptions = $state(defaultConstraintOptions);
 
-	// event handlers
 	function onError(err: { name: string; message: string }) {
 		error = `[${err.name}]: `;
 
